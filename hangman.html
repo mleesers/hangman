@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./hangman.css" />
+    <title>Hangman Game</title>
+  </head>
+  
+  <header>
+    <div class="container">
+      <h1 id = "Title">Hangman Game</h1>
+    </div>
+    <div>
+      <p id="description">Welcome to the hangman game! Choose a subject from below! You will have 9 chances to guess the letters to the word. Once you run out, Game Over!</p>
+    </div>
+  </header>
+
+  <container id="container">
+    <div id="start" display=none>
+      <button class="buttons" id="button1">Horror Characters</button>
+      <button class="buttons" id="button2">Pokemon</button>
+      <button class="buttons" id="button3">Mortal Kombat Characters</button>
+    </div>
+  </container>
+
+  <body id="main">   
+    <div id="mainScreen" style="display: none;">
+      <section id="listt">
+        <ul id ="list">
+          <li id="wins"></li>
+          <li id = "lettersUsed"></li>
+          <li id="chances"></li>
+        </ul>
+      </section>
+      <section id="guessArea">
+        <div class="images-container">
+            <img class="imgg" id="img1" src="./images/tumblr_inline_pg0k73U7BJ1rh6ctt_500.png" display="block">
+            <img class="img" id="img2" src="./images/2.png" display="none">
+            <img class="img" id="img3" src="./images/3.png" display="none">
+            <img class="img" id="img4" src="./images/4.png" display="none">
+            <img class="img" id="img5" src="./images/5.png" display="none">
+            <img class="img" id="img6" src=".//images/6.png" display="none">
+            <img class="img" id="img7" src="./images/7.png" display="none">
+            <img class="img" id="img8" src="./images/7.1.png" display="none">
+            <img class="img" id="img9" src="./images/7.2.png" display="none">
+            <img class="img" id="img10"src="./images/8.png" display="none">
+          </div>
+        <input type="text" id="input" placeholder="Enter letter or word guess here">
+        <p>Press Enter to submit your guess!</p>
+      </section>
+    </div>
+    <section id="end">
+      <h2>Would you like to play again?</h2>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </section>
+    <footer id="wordBlank">
+      <h1 id = "blanks"></h1>
+    </footer>
+    
+  </body>
+
+
+  <script src="./hangman.js"></script>
+</html>
